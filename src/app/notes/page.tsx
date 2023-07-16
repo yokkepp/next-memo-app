@@ -1,8 +1,10 @@
 import Header from "@/components/Header";
+import Modal from "@/components/Modal";
 export default function Notes() {
 	return (
 		<>
 			<Header />
+			<Modal />
 			<div className='flex '>
 				<div className='w-1/5 p-5 overflow-scroll h-screen pt-20'>
 					<ul>
@@ -56,32 +58,38 @@ export default function Notes() {
 					<p className='mb-3'>作成日: 2023/5/10</p>
 
 					<div>
-						<table border='1' className='w-full border-slate-400 border-solid'>
+						<table className='w-full bg-gray-900 rounded'>
 							<caption className='bg-teal-600 rounded-t'>Task</caption>
-							<tr>
-								<td>状態：</td>
-								<td>完了</td>
-							</tr>
-							<tr>
-								<td>完了日：</td>
-								<td>2023/5/22</td>
-							</tr>
-							<tr>
-								<td>期限：</td>
-								<td>2023/5/30</td>
-							</tr>
-							<tr>
-								<td>予定開始日：</td>
-								<td>2023/5/22</td>
-							</tr>
-							<tr>
-								<td>予定終了日：</td>
-								<td>2023/5/22</td>
-							</tr>
-							<tr>
-								<td>進捗：</td>
-								<td>100％</td>
-							</tr>
+							<thead></thead>
+							<tbody>
+								<tr>
+									<th></th>
+								</tr>
+								<tr>
+									<td className='p-2'>状態：</td>
+									<td className='p-2'>完了</td>
+								</tr>
+								<tr>
+									<td className='p-2'>完了日：</td>
+									<td className='p-2'>2023/5/22</td>
+								</tr>
+								<tr>
+									<td className='p-2'>期限：</td>
+									<td className='p-2'>2023/5/30</td>
+								</tr>
+								<tr>
+									<td className='p-2'>予定開始日：</td>
+									<td className='p-2'>2023/5/22</td>
+								</tr>
+								<tr>
+									<td className='p-2'>予定終了日：</td>
+									<td className='p-2'>2023/5/22</td>
+								</tr>
+								<tr>
+									<td className='p-2'>進捗：</td>
+									<td className='p-2'>100％</td>
+								</tr>
+							</tbody>
 						</table>
 					</div>
 				</div>
